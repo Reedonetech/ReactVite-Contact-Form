@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+  background-color: aquamarine;
+}
+.sub-Div{
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.first-parent{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.Names{
+  display: flex;
+  gap: 20px;
+
+  .Names1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.Names1 p{
+  color: gray;
+}
+.new1{
+  height: 5vh;
+  width: 18vw;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+}
+.new2{
+  height: 5vh;
+  width: 37.5vw;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+}
+.Email{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Email p{
+  color: gray;
+}
+.Input1{
+  display: flex;
+  gap: 10px;
+}
+.called{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.called p{
+  color: gray;
+}
+.Type1{
+  display: flex;
+  border: 1px solid black;
+  width: 18.3vw;
+  height: 5vh;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  .rad{
+    cursor: pointer;
+  }
+}
+.Type1 p{
+  color: gray;
+}
+.new3a{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.new3a p{
+  color: gray;
+}
+.new3{
+  width: 37.5vw;
+  height: 18vh;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+}
+.check{
+  display: flex;
+  gap: 10px;
+}
+.check p{
+  color: gray;
+}
+.btn{
+  height: 5vh;
+  border-radius: 5px;
+  border: 1px solid green;
+  outline: none;
+  background-color: rgb(107, 226, 107);
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .Names{
+   display: flex;
+   flex-direction: column;
+  }
+  .new1{
+    width: 80vw;
+    height: 7vh;
+  }
+  .new2{
+    width: 80vw;
+    height: 7vh;
+  }
+  .Input1{
+    display: flex;
+    flex-direction: column;
+  }
+  .Type1{
+    width: 80vw;
+    height: 7vh;
+  }
+  .new3{
+    width: 80vw;
+  }
+  main{
+    width: 100%;
+    height: 50%;
+    padding: 40px 30px 40px 30px;
+  }
+}
