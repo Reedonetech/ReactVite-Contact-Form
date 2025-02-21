@@ -1,4 +1,5 @@
-import {useState} from "react"
+import {useState} from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 function Contact () {
 
@@ -41,17 +42,27 @@ function Contact () {
     
     
     function handleSubmit(e){
-        e.preventDefault() 
-        if(!isChecked){
-            alert("term and condition");
+        e.preventDefault();
+
+        if(!firstName || !lastName || !email || !query || !message){
+            toast.warn("All fields required!")
             return null;
         }
+
+        if(!isChecked){
+            toast.error("Accept terms and conditions")
+            return null;
+        }
+
+        toast.success(`${firstName} ${lastName}, your message has been submitted!`);
+
         console.log({firstName, lastName, email, query, message});
         
     }
 
     return (
         <main className="parent-div">
+            <ToastContainer/>
             <div className="sub-Div">
                 <h1>Contact Us</h1>
                 <form className="first-parent" onSubmit={handleSubmit}>
